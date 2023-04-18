@@ -102,15 +102,35 @@
 
 
 /* count the number of vovels */
-function countVowels(str){
-    var vowel_list = "aeiouAEIOU";
-    var vcount = 0;
-    for(var i = 0; i<str.length; i++){
-        if(vowel_list.indexOf(str[i])  !== -1 ){
-            vcount += 1;
-        }
-    }
-    return vcount;
-}
+// function countVowels(str){
+//     var vowel_list = "aeiouAEIOU";
+//     var vcount = 0;
+//     for(var i = 0; i<str.length; i++){
+//         if(vowel_list.indexOf(str[i])  !== -1 ){
+//             vcount += 1;
+//         }
+//     }
+//     return vcount;
+// }
 
-console.log(countVowels("I love You"));
+// console.log(countVowels("I love You"));
+
+
+/*Check prime number */
+// function checkPrime(n){
+  
+//   if (n===1){
+//     return "Not prime";
+//   }else if(n===2){
+//     return "Is prime";
+//   }else{
+//     for(var i = 2; i < n; i++){
+//       if( n % i === 0){
+//         return "Not prime";
+//       }
+//     }
+//     return "Is prime";
+//   }
+// }
+
+// console.log(checkPrime(2))
