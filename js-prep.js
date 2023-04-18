@@ -134,3 +134,37 @@
 // }
 
 // console.log(checkPrime(2))
+
+
+/* Creating indentity MAtrix*/
+// function identity_Matrix(n){
+  
+//   var i;
+//   var j;
+//   for (i=0; i<n; i++){
+//     for(j=0; j<n; j++){
+//       if(i === j){
+//         console.log(" 1 ")
+//       }else{
+//         console.log(" 0 ")
+//       }
+//     }
+//     console.log("------------- ")
+//   }
+  
+// }
+
+// console.log(identity_Matrix(4))
+
+
+/*find second largest number and second last largest number */
+function largestNums(arr){
+  arr.sort();
+  var second_large = arr[1]
+  var rev = arr.reverse()
+  var second_last_large = rev[1]
+  return [second_large, second_last_large]
+}
+console.log(largestNums([1, 3, 4, 5, 2]))
+
+
