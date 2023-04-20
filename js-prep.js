@@ -168,3 +168,48 @@ function largestNums(arr){
 console.log(largestNums([1, 3, 4, 5, 2]))
 
 
+/*Count the number of occurances */
+// function countOccurance(str, x){
+//     var s = str.split(" ").join(" ");
+//     var count = 0;
+//     for(var i = 0; i< s.length; i++){
+//         if (s[i] === x){
+//             count += 1
+//         }
+//     }
+//     return count
+// }
+// const s = "VijayVB";
+// const f = "V"
+// console.log(countOccurance(s, f))
+
+// function nonRepeatedChar(str){
+//     var s = str.split("");
+//     var result = " ";
+//     for(var i = 0; i< s.length; i++){
+//         var ctr = 0;
+//         for(var j = 0; j<s.length; j++){
+//              if (s[i] === s[j]){
+//                 ctr+=1;
+//             }
+//         }
+//         if (ctr < 2){
+//             result = s[i]
+//         }
+//     }
+//     return result;
+// }
+
+// console.log(nonRepeatedChar("vbv"))
+
+
+function Longest_Country_Name(country_name)
+  {
+  return country_name.reduce(function(lname, country) 
+  {
+    return lname.length > country.length ? lname : country;
+  }, 
+"");
+}
+console.log(Longest_Country_Name(["Australia", "Germany", "United States of America"]));
+
