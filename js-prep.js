@@ -158,15 +158,31 @@
 
 
 /*find second largest number and second last largest number */
-function largestNums(arr){
-  arr.sort();
-  var second_large = arr[1]
-  var rev = arr.reverse()
-  var second_last_large = rev[1]
-  return [second_large, second_last_large]
-}
-console.log(largestNums([1, 3, 4, 5, 2]))
+// function largestNums(arr){
+//   arr.sort();
+//   var second_large = arr[1]
+//   var rev = arr.reverse()
+//   var second_last_large = rev[1]
+//   return [second_large, second_last_large]
+// }
+// console.log(largestNums([1, 3, 4, 5, 2]))
 
+
+// function secLargeNum(ar) {
+//   const arr = ar.sort((a,b)=>a-b);
+//   console.log(arr)
+//   let res = arr[arr.length - 1];
+//   for (let i = arr.length - 2; i >= 0; i--) {
+//     if (res !== ar[i]) {
+//       res = ar[i];
+//       break;
+//     }
+//   }
+//   return res;
+// }
+// // const input = [1, 2, -2, 11, 7, 1];
+// const input = [1, 4, 7, 2, 7];
+// console.log(secLargeNum(input));
 
 /*Count the number of occurances */
 // function countOccurance(str, x){
@@ -203,13 +219,17 @@ console.log(largestNums([1, 3, 4, 5, 2]))
 // console.log(nonRepeatedChar("vbv"))
 
 
-function Longest_Country_Name(country_name)
-  {
-  return country_name.reduce(function(lname, country) 
-  {
-    return lname.length > country.length ? lname : country;
-  }, 
-"");
-}
-console.log(Longest_Country_Name(["Australia", "Germany", "United States of America"]));
+// function Longest_Country_Name(country_name)
+//   {
+//   return country_name.reduce(function(lname, country) 
+//   {
+//     return lname.length > country.length ? lname : country;
+//   }, 
+// "");
+// }
+// console.log(Longest_Country_Name(["Australia", "Germany", "United States of America"]));
+
+
+
+
 
