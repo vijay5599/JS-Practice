@@ -231,5 +231,19 @@
 
 
 
+/*Rotation of array by 2 step*/
+// const input = [1, 4, 6, 2, 7];
+// function rotateArray(input) {
+//   for (let i = 0; i < 2; i++) {
+//     let temp = input[0];
+//     for (let i = 0; i < input.length; i++) {
+//       input[i] = input[i + 1];
+//       console.log(input[i]);
+//     }
+//     input[input.length - 1] = temp;
+//   }
+//   console.log(input);
+// }
+// rotateArray(input);
 
 
