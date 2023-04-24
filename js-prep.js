@@ -246,4 +246,18 @@
 // }
 // rotateArray(input);
 
+/*Reverse each word*/
+// function revEachWord(string){
+//   const words = string.split(" ")
+//   const rev = words.map(word => {
+//   return word.split('').reverse().join("")}).join(' ')
+//   return rev
+// }
+
+// const string = "This is Javascript code";
+// console.log(revEachWord(string))
+
+
+
+
 
