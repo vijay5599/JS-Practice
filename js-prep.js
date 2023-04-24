@@ -258,6 +258,29 @@
 // console.log(revEachWord(string))
 
 
+/*Max char occurances*/
+// function maxCharacter(str) {
+//   const charMap = {};
+//   let max = 0,
+//     maxChar = "";
+
+//   for (let char of str) {
+//     charMap[char] = charMap[char] + 1 || 1;
+//     console.log(charMap);
+//   }
+
+//   for (let char in charMap) {
+//     if (charMap[char] > max) {
+//       max = charMap[char];
+//       maxChar = char;
+//     }
+//   }
+
+//   return maxChar;
+// }
+// const string = "This is Javascript code";
+// console.log(maxCharacter(string));
+
 
 
 
