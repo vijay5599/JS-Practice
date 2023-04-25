@@ -24,6 +24,22 @@
 
 
 
+/*Reverse a string*/
+
+// function rev(str) {
+//   let revStr = "";
+//   for (let char of str) {
+//     revStr = char + revStr;
+//   }
+//   return revStr;
+// }
+
+// const inpu = "abcg";
+// console.log(rev(inpu));
+
+
+
+
 /** Check given strinf is palindroem **/
 
 // function palindrome(s){
