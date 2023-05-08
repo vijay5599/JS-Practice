@@ -365,31 +365,27 @@ function printKMax(arr,n,k)
     let k = 3;
     printKMax(arr, n, k);
 
+
+
 /*Palindromic Array*/
-function isPalindrome(N){
-        let str = "" + N;
-        let len = str.length;
-        for (let i = 0; i < parseInt(len / 2, 10); i++)
-        {
-            if (str[i] != str[len - 1 - i ])
-                return false;
+function palindromeCheck(arr, n){
+    let newArr = [];
+    for(let i = 0; i< n; i++){
+        arr[i]= arr[i]+"";
+        let revNum = arr[i].split("").reverse().join("")
+        if(arr[i] !== revNum){
+            newArr.push(revNum)
         }
-        return true;
-}
-function isPalinArray(arr, n){
-    for (let i = 0; i < n; i++)
-        {
-            let ans = isPalindrome(arr[i]);
-            if (ans == false)
-                return false;
-        }
-        return true;
     }
-arr = [121, 333, 232, 444]
-n = arr.length
-let res = isPalinArray(arr, n);
-    if (res == true)
-        console.log(1);
-    else
-        console.log(0);
+    if(newArr.length === 0){
+        return true
+    }else{
+        return false
+    }
+}
+
+
+let arr = [121, 132, 141]
+let n = 3
+console.log(palindromeCheck(arr, n))
 
