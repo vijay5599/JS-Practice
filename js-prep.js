@@ -403,3 +403,29 @@ function Maximize(arr,n){
     let arr = [5, 1, 2, 3, 4]
     let n = arr.length
     console.log(Maximize(arr,n))
+
+
+
+
+/*Count pairs with given sum*/
+
+function getPairsCount(arr,n,k){
+        var m = new Map();
+        var count = 0;
+        for (var i = 0; i < n; i++) {
+            if (m.has(k - arr[i])) {
+                count += m.get(k - arr[i]);
+            }
+            if (m.has(arr[i])) {
+                m.set(arr[i], m.get(arr[i]) + 1);
+            } else {
+                m.set(arr[i], 1);
+            }
+        }
+        return count;
+    }
+
+
+let N = 4, K = 6
+let arr = [1, 5, 7, 1]
+console.log(getPairsCount(arr,N,K))
