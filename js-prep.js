@@ -389,3 +389,17 @@ let arr = [121, 132, 141]
 let n = 3
 console.log(palindromeCheck(arr, n))
 
+/*Maximize Array*/
+function Maximize(arr,n){
+        const array = arr.sort(function(a, b){return a - b})
+       let sum = 0;
+       for(let i = 0; i < n; i++){
+           sum = sum + (array[i] * i)
+           console.log((array[i]))
+       }
+       return sum
+    }
+    
+    let arr = [5, 1, 2, 3, 4]
+    let n = arr.length
+    console.log(Maximize(arr,n))
