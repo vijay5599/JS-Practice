@@ -457,3 +457,25 @@ let n = a1.length
 let m = a2.length
 
 console.log(subset(a1, a2, n, m))
+
+
+/*Retun objexts in arraya */
+const books = [
+    {
+        author: 'Pailo',
+        books: ['The Alchemist', 'Eleven Minutes']
+    },
+    {
+        author: 'John Green',
+        books: ['The fault']
+    },
+    {
+        author: 'James alen',
+        books: ['As u think', 'The way of Peace']
+    }
+]
+const result = books.reduce((accu, current) => {
+    return [...accu, ...current.books];
+}, [])
+
+console.log(result)
