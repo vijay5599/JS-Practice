@@ -429,3 +429,31 @@ function getPairsCount(arr,n,k){
 let N = 4, K = 6
 let arr = [1, 5, 7, 1]
 console.log(getPairsCount(arr,N,K))
+
+
+
+
+/*Subset of array */
+function subset(a1, a2, n, m){
+        a1.sort(function compareNumbers(a, b) { return a - b;})
+        a2.sort(function compareNumbers(a, b) { return a - b;})
+        let count = 0;
+        let j = 0;
+        for(let i =0; i<n; i++){
+            if(a1[i] == a2[j]){
+                count+=1
+                j+=1
+            }
+        }
+        if(count>= m){
+            return "Yes"
+        }
+        return "No"
+    }
+    
+let a1 = [1, 2, 3, 4, 5, 6]
+let a2 = [1, 2, 4] 
+let n = a1.length
+let m = a2.length
+
+console.log(subset(a1, a2, n, m))
