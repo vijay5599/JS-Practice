@@ -23,6 +23,17 @@
 // console.log(result)
 
 
+/*Sum of Digits*/
+// function rev(n){
+//     if(n < 10){
+//         return n
+//     }
+//     return rev(Math.floor(n/10)) + n%10
+// }
+// let num = 253;  ==> output=10
+// console.log(rev(num))
+
+
 
 /*Reverse a string*/
 
