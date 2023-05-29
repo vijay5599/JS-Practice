@@ -490,3 +490,31 @@ const result = books.reduce((accu, current) => {
 }, [])
 
 console.log(result)
+
+
+
+/*Anagram checker*/
+function isAnagram(a, b){
+    let flag = false
+    let n1 = a.length
+    let n2 = b.length
+    if(n1 !== n2) return false;
+    var a1 = a.split("").sort().join("");
+    var b1 = b.split("").sort().join("");
+    for(let i = 0; i<n1; i++){
+        if(a1.charAt(i) === b1.charAt(i)){
+            flag = true
+        }else{
+            flag = false;
+            break;
+        }
+    }
+    if(flag == true){
+        return true
+    }
+    return false
+}
+    
+let a = "geeksforgeeks";
+let b = "forgeeksgeeks";
+console.log(isAnagram(a, b))
