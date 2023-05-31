@@ -80,7 +80,21 @@ console.log(fun(n))
 ////////////////////////////////////////////
 
 
+///-----Arrays-----////
 
+Practice -1 : check Array is sorted or not
+
+function isSort(arr, n){
+    for (let i = 0; i < n; i++){
+        if(arr[i] < arr[i-1]){
+            return false
+        }
+    }
+    return true
+}
+const arr = [2, 5, 6, 7, 9, 19]
+const n = arr.length
+console.log(isSort(arr, n))
 
 
 
