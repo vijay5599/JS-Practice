@@ -96,6 +96,42 @@ const arr = [2, 5, 6, 7, 9, 19]
 const n = arr.length
 console.log(isSort(arr, n))
 
+/////////////////////////////////////////////
+
+Practice -2 Second largest element 
+
+function secLargeNum(ar) {
+  const arr = ar.sort((a,b)=>a-b);
+  let res = arr[arr.length - 1];
+  for (let i = arr.length - 2; i >= 0; i--) {
+    if (res !== ar[i]) {
+      res = ar[i];
+      break;
+    }
+  }
+  return res;
+}
+const input = [1, 4, 7, 2, 7];
+console.log(secLargeNum(input));
+
+////////////////////////////////////////////
+
+Practice-3: removing duplicates from the array 
+function rmvDuplicates(arr, n){
+    arr.sort((a,b)=>a-b);
+    let arr1 = []
+    for(let i = 0; i< n; i++){
+        if(arr[i] !== arr[i+1]){
+            arr1.push(arr[i])
+        }
+    }
+    return arr1
+}
+
+const arr = [2, 2, 4, 5, 5, 6, 7, 7]
+const n = arr.length
+console.log(rmvDuplicates(arr, n))
+
 
 
 
