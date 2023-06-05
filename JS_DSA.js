@@ -180,6 +180,48 @@ console.log(productArray(nums, n))
 
 
 
+//////////////////////////////////////////////////
+Practice - 5 :-> Non-Repeatative char
+
+Method--1
+function nonRepeat(strr)
+{
+  let str = strr.split('')
+  let result = ''
+  let count = 0
+    for(let i = 0; i < str.length; i++){
+      count = 0
+      for(let j = 0; j < str.length; j++){
+        if(str[i] === str[j]){
+          count +=1
+        }
+      }
+      if(count < 2){
+        result = str[i]
+        break;
+      }
+    }
+    return result
+}
+
+let str = 'abacddbec'
+console.log(nonRepeat(str))
+
+
+Method--2
+
+function find_FirstNotRepeatedChar(strr) {
+  let str = strr.split('')
+  for(let i = 0; i < str.length; i++){
+    if(str.indexOf(str[i]) === str.lastIndexOf(str[i])){
+      return str[i]
+    }
+  }
+}
+console.log(find_FirstNotRepeatedChar('abacddbefec'));
+
+
+
 
 
 
