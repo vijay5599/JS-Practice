@@ -518,3 +518,38 @@ function isAnagram(a, b){
 let a = "geeksforgeeks";
 let b = "forgeeksgeeks";
 console.log(isAnagram(a, b))
+
+
+
+
+
+
+
+//Smallest Subset with Greater Sum
+function subArray(Arr, N){
+    Arr.sort(function(a, b){return a - b});
+    console.log(Arr)
+    var totalSum = 0;
+    for(let i=0;i<N;i++)
+    {
+        totalSum += Arr[i];
+        
+    }
+    let sum=0;
+    let count=0;
+    for(let i=N-1;i>=0;i--)
+    {
+        count++;
+        sum += Arr[i];
+        totalSum -= Arr[i];
+        if(sum > totalSum)
+        {
+            break;
+        }
+    }
+    return count;
+}
+
+let arr = [20, 12, 18, 4]
+let N = arr.length
+console.log(subArray(arr, N))
