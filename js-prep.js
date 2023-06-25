@@ -553,3 +553,21 @@ function subArray(Arr, N){
 let arr = [20, 12, 18, 4]
 let N = arr.length
 console.log(subArray(arr, N))
+
+
+
+/**/
+function singleNumber(nums) {
+    if (nums.length===1) {
+        return nums[0]
+    }
+    let result = 0;
+    nums.forEach(element => {
+        result = result ^ element
+    });
+    return result;
+}
+
+
+let nums = [4,1,2,1,2]
+console.log(singleNumber(nums))
